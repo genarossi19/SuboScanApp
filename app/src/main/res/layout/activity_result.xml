@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/tvPassengerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lyStatus"
+        tools:text="Genaro Rossi"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/naranja"
+        />
+
+<LinearLayout
+    android:id="@+id/lyStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tvPassengerName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/cvResults"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/combined_vector"
+        app:tint="@color/verde"
+        >
+
+    </ImageView>
+
+</LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResults"
+        android:layout_width="260dp"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lyStatus"
+        app:cardBackgroundColor="@color/gris_backgroundTL"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|start"
+            android:padding="16dp"
+            >
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Total: 500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tvSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Saldo: 3000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

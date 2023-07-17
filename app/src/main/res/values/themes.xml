@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SuboScan" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/verde</item>
+        <item name="colorPrimaryVariant">@color/verde_oscuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/naranja</item>
+        <item name="colorSecondaryVariant">@color/naranja_oscuro</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.SuboScan.CardViewStyle" parent="CardView">
+        <item name="android:background">@color/gris_backgroundTL</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="32dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ivQR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/pngTrenqueLogo"
+            android:layout_width="108dp"
+            android:layout_height="113dp"
+            android:src="@drawable/logotrenque"
+            android:layout_marginEnd="105dp"
+            />
+        <ImageView
+            android:id="@+id/pngPCTLogo"
+            android:layout_width="108dp"
+            android:layout_height="113dp"
+            android:src="@drawable/polocientifico"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivQR"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:src="@drawable/ic_qr"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnScan"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScanFrontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_btn_rounded_pressed"
+        android:text="@string/scan_qr_frontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivQR"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_btn_rounded_pressed"
+        android:text="@string/scan_qr"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnScanFrontal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SuboScan</string>
+    <string name="scan_qr_frontal">ESCANEAR</string>
+    <string name="scan_qr">ESCANEAR CON CAMARA TRASERA</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Círculo -->
+    <item android:drawable="@drawable/ic_circle" />
+
+    <!-- Tic -->
+    <item
+        android:drawable="@drawable/ic_checked"
+        android:gravity="center"
+        /> <!-- Ajusta el valor del atributo scale según tu preferencia -->
+
+</layer-list>
+
